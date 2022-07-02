@@ -19,14 +19,6 @@ export async function sha(
   return new Uint8Array(arrayBuffer);
 }
 
-export function sha256(input: Input) {
-  return sha('SHA-256', input);
-}
-
-export function sha512(input: Input) {
-  return sha('SHA-512', input);
-}
-
 export async function pbkdf2(
   hashAlgorithm: 'SHA-1' | 'SHA-256' | 'SHA-512',
   password: Input,

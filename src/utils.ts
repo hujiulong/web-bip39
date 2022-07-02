@@ -6,6 +6,7 @@ export function assert(
     throw new Error(message);
   }
 }
+
 export function padStart(
   str: string,
   length: number,

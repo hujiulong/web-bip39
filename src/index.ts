@@ -1,5 +1,5 @@
 import {
-  sha256,
+  sha,
   pbkdf2,
   randomBytes,
 } from './crypto';
@@ -58,7 +58,7 @@ export async function generateMnemonic(wordlist: string[], strength: number = 12
 async function deriveChecksumBits(entropy: Uint8Array) {
   const ENT = entropy.length * 8;
   const CS = ENT / 32;
-  const hash = await sha256(entropy);
+  const hash = await sha('SHA-256', entropy);
   return bytesToBinary(hash).slice(0, CS);
 }
 
