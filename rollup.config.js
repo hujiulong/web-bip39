@@ -3,7 +3,7 @@ import ts from 'rollup-plugin-typescript2';
 import { terser } from 'rollup-plugin-terser';
 import fs from 'fs';
 
-const resolve = p => path.resolve(__dirname, '../', p);
+const resolve = p => path.resolve(__dirname, p);
 
 // clear dist
 if (fs.existsSync(resolve('dist'))) {
