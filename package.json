@@ -1,6 +1,6 @@
 {
   "name": "web-bip39",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "7kb JavaScript implementation of Bitcoin BIP39",
   "main": "index.js",
   "module": "dist/web-bip39.esm.js",
