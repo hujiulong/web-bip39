@@ -5,7 +5,7 @@ JavaScript implementation of [Bitcoin BIP39](https://github.com/bitcoin/bips/blo
 Compared with most JavaScript implementations of BIP39, web-bip39:
 
 * No external dependencies
-* Only 7kb (lib<2kb> + english wordlist<7kb>) after gzip
+* Only 8kb (lib<2kb> + wordlist<~6kb>) after gzip
 
 web-bip39 depends on [Web Crypto](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API) and other browser environment APIs, so it can only run in the browser environment.
 
