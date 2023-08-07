@@ -1,4 +1,4 @@
-const crypto = globalThis.crypto;
+const crypto = typeof window === 'undefined' ? globalThis.crypto : window.crypto;
 const subtle = crypto.subtle ?? (crypto as any).webkitSubtle;
 
 function utf8ToBytes(str: string): Uint8Array {
