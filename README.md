@@ -42,10 +42,10 @@ const seed = await mnemonicToSeed(mnemonic, 'password');
 // => 'd5346e622570b6a82a182f694dd39c0108cad8e0c87936add0cb1a495b738a1896154100b0f479b3f03c236681076b1ef140ff303c95ddd3286b586f395b2d42'
 
 // Converts mnemonic to entropy
-const entropy = await mnemonicToEntropy(mnemonic);
+const entropy = await mnemonicToEntropy(mnemonic, wordlist);
 
 // Converts entropy to mnemonic
-await entropyToMnemonic(entropy);
+await entropyToMnemonic(entropy, wordlist);
 // => 'crash lottery basket zero leg rice crunch force volcano toilet nasty baby'
 
 // Validates mnemonic
